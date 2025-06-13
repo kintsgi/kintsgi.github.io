@@ -19,14 +19,16 @@
   <meta name="author" content="kintsgi">
   <meta name="keywords" content="">
   
-    <meta property="og:type" content="article">
+    <meta name="description" content="Lyndon 分解定义Lyndon 串：对于一个字符串 $s$，如果 $s$ 严格小于其所有循环同构串（不包括不位移的串），称 $s$ 为 Lyndon 串。 Lyndon 分解：称 $s&#x3D;w_1w_2\cdots w_k$ 为 $s$ 的 Lyndon 分解，当且仅当 $w_1\ge w_2\ge\cdots\ge w_k$ 且 $w_1,w_2,\cdots,w_k$ 均为 Lynd">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Lyndon 分解">
 <meta property="og:url" content="http://example.com/2025/06/11/lyndon-runs/index.html">
 <meta property="og:site_name" content="kintsgi">
+<meta property="og:description" content="Lyndon 分解定义Lyndon 串：对于一个字符串 $s$，如果 $s$ 严格小于其所有循环同构串（不包括不位移的串），称 $s$ 为 Lyndon 串。 Lyndon 分解：称 $s&#x3D;w_1w_2\cdots w_k$ 为 $s$ 的 Lyndon 分解，当且仅当 $w_1\ge w_2\ge\cdots\ge w_k$ 且 $w_1,w_2,\cdots,w_k$ 均为 Lynd">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/img/bg/lyndon_runs_index.png">
 <meta property="article:published_time" content="2025-06-11T11:31:00.000Z">
-<meta property="article:modified_time" content="2025-06-11T12:48:00.194Z">
+<meta property="article:modified_time" content="2025-06-13T13:07:04.017Z">
 <meta property="article:author" content="kintsgi">
 <meta property="article:tag" content="string">
 <meta name="twitter:card" content="summary_large_image">
@@ -72,7 +74,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"cpp"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -223,7 +225,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          0 字
+          608 字
         
       </span>
     
@@ -234,7 +236,7 @@
         
         
         
-          1 分钟
+          6 分钟
         
       </span>
     
@@ -276,7 +278,21 @@
             
               <div class="markdown-body">
                 
-                
+                <h2 id="Lyndon-分解"><a href="#Lyndon-分解" class="headerlink" title="Lyndon 分解"></a>Lyndon 分解</h2><h3 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h3><p>Lyndon 串：对于一个字符串 $s$，如果 $s$ 严格小于其所有循环同构串（不包括不位移的串），称 $s$ 为 Lyndon 串。</p>
+<p>Lyndon 分解：称 $s&#x3D;w_1w_2\cdots w_k$ 为 $s$ 的 Lyndon 分解，当且仅当 $w_1\ge w_2\ge\cdots\ge w_k$ 且 $w_1,w_2,\cdots,w_k$ 均为 Lyndon 串。容易发现 Lyndon 分解唯一，具体考虑构造性证明：每次取出最小后缀的串并把其删去，且任何不按这个规则删串的分解都不合法。</p>
+<h3 id="Duval-算法"><a href="#Duval-算法" class="headerlink" title="Duval 算法"></a>Duval 算法</h3><p>近似 Lyndon 串：如果一个串能够被分解成 $s&#x3D;www\cdots ww[1:k]$ 的形态，其中 $w$ 是 Lyndon 串，那么称 $s$ 为近似 Lyndon 串。</p>
+<p>我们维护三个指针 $i,j,k$，表示当前 $s[1:i-1]$ 已经分解完了 Lyndon 串，且正在处理近似 Lyndon 串 $s[i:k]$，其中 $s[j:k-1]$ 是前者的一个周期，初始化 $i&#x3D;j&#x3D;1,k&#x3D;2$，试着移动指针：</p>
+<ul>
+<li>如果 $s_j&#x3D;s_k$，两个指针自增。</li>
+<li>如果 $s_j&lt;s_k$，此时近似 Lyndon 串的周期被拆解 直接重构，调整 $j&#x3D;i,k&#x3D;k+1$。</li>
+<li>如果 $s_j&gt;s_k$，那么 $s[i:k]$ 必然不是 Lyndon 串，于是把 $i$ 每次跳 $k-j$（周期长），直到再跳一次超过 $k$，重置指针，新一轮。</li>
+</ul>
+<p>$\mathcal O(n)$ 的，怎么证明不重要。</p>
+<h3 id="最小表示法"><a href="#最小表示法" class="headerlink" title="最小表示法"></a>最小表示法</h3><p>对于串 $s$，容易发现把 $s$ 复制一份得到 $ss$，那么 Lyndon 分解中跨过 $ss[n]$ 的串 $ss[l:r]$，$l$ 就是循环位移的开头。</p>
+<p>测试代码块功能：</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-comment">// Tu as décidé de partir. Va-t&#x27;en.</span><br><span class="hljs-comment">// Tu seras loin, toi.</span><br><span class="hljs-comment">// Mais oui, je t&#x27;aime.</span><br><span class="hljs-comment">// J&#x27;ai été sotte. Je te demande pardon. Tâche d&#x27;être heureux.</span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;bits/stdc++.h&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">define</span> PR(x) printf(x ? <span class="hljs-string">&quot;YES\n&quot;</span> : <span class="hljs-string">&quot;NO\n&quot;</span>)</span><br><span class="hljs-meta">#<span class="hljs-keyword">define</span> pr(x) printf(x ? <span class="hljs-string">&quot;Yes\n&quot;</span> : <span class="hljs-string">&quot;No\n&quot;</span>)</span><br><span class="hljs-meta">#<span class="hljs-keyword">define</span> mk make_pair</span><br><span class="hljs-meta">#<span class="hljs-keyword">define</span> pb emplace_back</span><br><span class="hljs-meta">#<span class="hljs-keyword">define</span> fi first</span><br><span class="hljs-meta">#<span class="hljs-keyword">define</span> se second</span><br><span class="hljs-meta">#<span class="hljs-keyword">define</span> pii pair<span class="hljs-string">&lt;int, int&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">define</span> fore(i, u, v) for (int i = h[u], v = e[i].v; i; v = e[i = e[i].nxt].v)</span><br><span class="hljs-meta">#<span class="hljs-keyword">define</span> all(x) x.begin(), x.end()</span><br><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> std;<br><span class="hljs-function"><span class="hljs-keyword">inline</span> <span class="hljs-type">int</span> <span class="hljs-title">read</span><span class="hljs-params">()</span> </span>&#123;<br>  <span class="hljs-type">int</span> x = <span class="hljs-number">0</span>, f = <span class="hljs-number">1</span>;<br>  <span class="hljs-type">char</span> ch = <span class="hljs-built_in">getchar</span>();<br>  <span class="hljs-keyword">while</span> (! <span class="hljs-built_in">isdigit</span>(ch)) &#123; <span class="hljs-keyword">if</span> (ch == <span class="hljs-string">&#x27;-&#x27;</span>) f = <span class="hljs-number">-1</span>; ch = <span class="hljs-built_in">getchar</span>(); &#125;<br>  <span class="hljs-keyword">while</span> (<span class="hljs-built_in">isdigit</span>(ch)) &#123; x = x * <span class="hljs-number">10</span> + ch - <span class="hljs-number">48</span>; ch = <span class="hljs-built_in">getchar</span>(); &#125;<br>  <span class="hljs-keyword">return</span> x * f;<br>&#125;<br><br><span class="hljs-type">const</span> <span class="hljs-type">int</span> maxn = <span class="hljs-number">5e6</span> + <span class="hljs-number">10</span>;<br><br><span class="hljs-type">int</span> n;<br><span class="hljs-type">char</span> s[maxn];<br><br><span class="hljs-function"><span class="hljs-type">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>&#123;<br><span class="hljs-meta">#<span class="hljs-keyword">ifdef</span> LOCAL</span><br>  <span class="hljs-built_in">freopen</span>(<span class="hljs-string">&quot;a.in&quot;</span>, <span class="hljs-string">&quot;r&quot;</span>, stdin);<br><span class="hljs-meta">#<span class="hljs-keyword">endif</span></span><br><br>  <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%s&quot;</span>, s + <span class="hljs-number">1</span>), n = <span class="hljs-built_in">strlen</span>(s + <span class="hljs-number">1</span>);<br>  <br>  <span class="hljs-type">int</span> i = <span class="hljs-number">1</span>, ans = <span class="hljs-number">0</span>;<br>  <span class="hljs-keyword">while</span> (i &lt;= n) &#123;<br>    <span class="hljs-type">int</span> j = i, k = i + <span class="hljs-number">1</span>;<br>    <span class="hljs-keyword">while</span> (k &lt;= n)<br>      <span class="hljs-keyword">if</span> (s[k] == s[j]) j ++, k ++;<br>      <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (s[k] &gt; s[j]) j = i, k ++;<br>      <span class="hljs-keyword">else</span> <span class="hljs-keyword">break</span>;<br>    <br>    <span class="hljs-type">int</span> c = k - j;<br>    <span class="hljs-keyword">while</span> (i + c &lt;= k)<br>      ans ^= i + c - <span class="hljs-number">1</span>, i += c;<br>  &#125;<br><br>  cout &lt;&lt; ans &lt;&lt; <span class="hljs-string">&#x27;\n&#x27;</span>;<br>  <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br>&#125;<br><span class="hljs-comment">// Ah! Je me réveille à peine... Je suis encore toute décoiffée...</span><br><span class="hljs-comment">// Ma fleur est là quelque part...</span><br></code></pre></td></tr></table></figure>
+
+
                 
               </div>
             
@@ -355,6 +371,15 @@
             </div>
 
             
+  
+  
+    <article id="comments" lazyload>
+      
+
+    </article>
+  
+
+
           </article>
         </div>
       </div>
