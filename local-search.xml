@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>2025.7 模拟赛</title>
+    <link href="/2025/07/21/monisai/2025-07/"/>
+    <url>/2025/07/21/monisai/2025-07/</url>
+    
+    <content type="html"><![CDATA[<h4 id="7-18-C">7.18 *C</h4><h4 id="7-18-D">7.18 *D</h4><h4 id="7-19-D">7.19 D</h4><p>转化成一次函数极值之后倒着做，树状数组套李超（我发现我一点都不会做 ds 套起来的东西，有一次考了树套树我都不会写，真是完蛋了）。所以写了分块，但是挂了，这个做法补完把前面那种写一遍。</p><h4 id="7-20-A">7.20 <a href="https://www.luogu.com.cn/problem/P9485">A</a></h4><p>最后只有两种改法：升高把自己的水填起来 或者 降低把旁边的水排出去，前面好做，后面暴力发现是 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">O</mi><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\mathcal O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathcal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mclose">)</span></span></span></span> 的。</p><h4 id="7-20-C">7.20 <a href="https://qoj.ac/problem/10170">C</a></h4><h4 id="7-21-D">7.21 <a href="https://www.luogu.com.cn/problem/P7476">D</a></h4>]]></content>
+    
+    
+    <categories>
+      
+      <category>monisai</category>
+      
+    </categories>
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>垃圾车 [随缘更新]</title>
     <link href="/2025/07/19/problemset/truck-01/"/>
     <url>/2025/07/19/problemset/truck-01/</url>
@@ -14,25 +33,6 @@
     <categories>
       
       <category>problemset</category>
-      
-    </categories>
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>2025.7 模拟赛</title>
-    <link href="/2025/07/18/monisai/2025-07/"/>
-    <url>/2025/07/18/monisai/2025-07/</url>
-    
-    <content type="html"><![CDATA[]]></content>
-    
-    
-    <categories>
-      
-      <category>monisai</category>
       
     </categories>
     
@@ -101,30 +101,11 @@
   
   
   <entry>
-    <title>2025.6 推歌</title>
-    <link href="/2025/07/06/songs/2025-06/"/>
-    <url>/2025/07/06/songs/2025-06/</url>
-    
-    <content type="html"><![CDATA[<div class="group-image-container"><div class="group-image-row"><div class="group-image-wrap"><img src="https://y.qq.com/music/photo_new/T002R300x300M000003ADwg83M1tmW_1.jpg" alt="Addison"></div><div class="group-image-wrap"><img src="https://y.qq.com/music/photo_new/T002R300x300M000004UjGz717qAlo_1.jpg" alt="PRINCESS OF POWER"></div><div class="group-image-wrap"><img src="https://y.qq.com/music/photo_new/T002R300x300M000004UAIsQ2LxOFq_3.jpg" alt="I quit"></div></div><div class="group-image-row"><div class="group-image-wrap"><img src="https://y.qq.com/music/photo_new/T002R300x300M000001i8GAq4D3CCc_2.jpg" alt="Tropicoqueta"></div><div class="group-image-wrap"><img src="https://y.qq.com/music/photo_new/T002R300x300M000003DnWGN0hGtYi_2.jpg" alt="Same Stories, Different Narratives"></div><div class="group-image-wrap"><img src="https://y.qq.com/music/photo_new/T002R300x300M0000045sv5Y0vjsu2_1.jpg" alt="Virgin"></div></div></div><ul><li><p>2025/06/06</p><ul><li>[★★★] Addison - Addison Rae<ul><li>整体制作都非常轻盈，听起来毫无压力。</li><li>[2] Diet Pepsi</li><li><strong>[3] Aquamarine</strong></li><li>[3] Summer Forever</li><li><strong>[3] Fame is a Gun</strong></li><li>[2] Headphones On</li></ul></li><li>[0] PRINCESS OF POWER - MARINA<ul><li>马钻你自己加油吧。。。</li><li>[1] CUNTISSIMO</li></ul></li></ul></li><li><p>2025/06/20</p><ul><li><p>[★★] I quit - HAIM</p><ul><li>[1] All over me</li><li>[2] Relationships</li><li>[3] Take me back</li></ul></li><li><p>[★★] Tropicoqueta - KAROL G</p><ul><li>西语专为什么体量一定要这么大。。。如果把中间的filler去掉就会好很多</li><li><strong>[3] Papasito</strong></li><li>[1] LATINA FOREVA</li><li>[2] Bandida Entrenada</li><li><strong>[4] Viajando Por El Mundo</strong></li><li>[2] Tropicoqueta</li></ul></li><li><p>[★★★] Same Stories, Different Narratives - 鹤The Crane</p><ul><li>[2] Same Story</li><li><strong>[4] VILLAIN</strong></li><li><strong>[4] DISEASE</strong></li><li>[3] 心脏的右边</li></ul></li></ul></li><li><p>2025/06/27</p><ul><li>[★★] Virgin - Lorde<ul><li>没有放开来做，好多歌到最后爆发不出来有一种寸止的感觉（这是可以说的吗）</li><li>[3] Hammer</li><li>[1] What Was That</li><li><strong>[3] Shapeshifter</strong></li><li><strong>[3] Current Affairs</strong></li></ul></li></ul></li></ul>]]></content>
-    
-    
-    <categories>
-      
-      <category>songs</category>
-      
-    </categories>
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>Welcome to my world.</title>
     <link href="/2025/06/20/introduction/"/>
     <url>/2025/06/20/introduction/</url>
     
-    <content type="html"><![CDATA[<p>Here’s the introduction!📄</p><p>关于我个人的介绍可以在 <a href="https://kintsgi.github.io/about/">page about</a> 里面看！这里介绍一下博客的各种分类！</p><table><thead><tr><th style="text-align:center">类型</th><th style="text-align:center">分支</th><th style="text-align:center">是否在主页显示</th><th style="text-align:center">是否在归档分类页显示</th><th style="text-align:center">碎碎念</th></tr></thead><tbody><tr><td style="text-align:center">做题笔记</td><td style="text-align:center">一般以 *set 的形式命名，如 ppt 对应习题的做题笔记为 pptset</td><td style="text-align:center">是</td><td style="text-align:center">是</td><td style="text-align:center"><strong>主要更新对象</strong></td></tr><tr><td style="text-align:center">学习笔记</td><td style="text-align:center">所有笔记文章都会带其对应的细分分类，如 notes - string, notes - poly 等</td><td style="text-align:center">否</td><td style="text-align:center">是</td><td style="text-align:center"></td></tr><tr><td style="text-align:center">推歌</td><td style="text-align:center">songs</td><td style="text-align:center">否</td><td style="text-align:center">是</td><td style="text-align:center">大概是月更的形式，可能有点费时间，就当我休息休息！</td></tr><tr><td style="text-align:center">模拟赛</td><td style="text-align:center">monisai</td><td style="text-align:center">是</td><td style="text-align:center">是</td><td style="text-align:center">我真的会写这个吗</td></tr><tr><td style="text-align:center">？</td><td style="text-align:center">/</td><td style="text-align:center">否</td><td style="text-align:center">否</td><td style="text-align:center">？</td></tr></tbody></table><p>不在主页和分类页显示的文章只能通过链接访问。</p>]]></content>
+    <content type="html"><![CDATA[<p>Here’s the introduction!📄</p><p>关于我个人的介绍可以在 <a href="https://kintsgi.github.io/about/">page about</a> 里面看！这里介绍一下博客的各种分类！</p><table><thead><tr><th style="text-align:center">类型</th><th style="text-align:center">分支</th><th style="text-align:center">是否在主页显示</th><th style="text-align:center">是否在归档分类页显示</th><th style="text-align:center">碎碎念</th></tr></thead><tbody><tr><td style="text-align:center">做题笔记</td><td style="text-align:center">一般以 *set 的形式命名，如 ppt 对应习题的做题笔记为 pptset</td><td style="text-align:center">是</td><td style="text-align:center">是</td><td style="text-align:center"><strong>主要更新对象</strong></td></tr><tr><td style="text-align:center">学习笔记</td><td style="text-align:center">所有笔记文章都会带其对应的细分分类，如 notes - string, notes - poly 等</td><td style="text-align:center">否</td><td style="text-align:center">是</td><td style="text-align:center"></td></tr><tr><td style="text-align:center">模拟赛</td><td style="text-align:center">monisai</td><td style="text-align:center">是</td><td style="text-align:center">是</td><td style="text-align:center">我真的会写这个吗</td></tr><tr><td style="text-align:center">？</td><td style="text-align:center">/</td><td style="text-align:center">否</td><td style="text-align:center">否</td><td style="text-align:center">？</td></tr></tbody></table><p>不在主页和分类页显示的文章只能通过链接访问。</p>]]></content>
     
     
     
