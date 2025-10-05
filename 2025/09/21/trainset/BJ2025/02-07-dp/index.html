@@ -19,16 +19,16 @@
   <meta name="author" content="kintsgi">
   <meta name="keywords" content="">
   
-    <meta name="description" content="she&#39;s got a way &#x2F; and she got away">
+    <meta name="description" content="But I&#39;d rather be alone than a stranger &#x2F; You&#39;d come visit me late at night">
 <meta property="og:type" content="article">
-<meta property="og:title" content="2025 北京 - 2.9 flow">
-<meta property="og:url" content="http://example.com/2025/08/09/trainset/BJ2025/02-09-flow/index.html">
+<meta property="og:title" content="2025 北京 - 2.7 dp [欠模拟赛，题]">
+<meta property="og:url" content="http://example.com/2025/09/21/trainset/BJ2025/02-07-dp/index.html">
 <meta property="og:site_name" content="kintsgi">
-<meta property="og:description" content="she&#39;s got a way &#x2F; and she got away">
+<meta property="og:description" content="But I&#39;d rather be alone than a stranger &#x2F; You&#39;d come visit me late at night">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/img/bg/trainset/2025_BJ_index.jpg">
-<meta property="article:published_time" content="2025-08-09T05:55:00.000Z">
-<meta property="article:modified_time" content="2025-08-09T05:55:48.488Z">
+<meta property="article:published_time" content="2025-09-21T14:41:00.000Z">
+<meta property="article:modified_time" content="2025-09-30T09:30:34.745Z">
 <meta property="article:author" content="kintsgi">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="http://example.com/img/bg/trainset/2025_BJ_index.jpg">
@@ -37,7 +37,7 @@
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>2025 北京 - 2.9 flow - kintsgi</title>
+  <title>2025 北京 - 2.7 dp [欠模拟赛，题] - kintsgi</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -205,7 +205,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="2025 北京 - 2.9 flow"></span>
+            <span id="subtitle" data-typed-text="2025 北京 - 2.7 dp [欠模拟赛，题]"></span>
           
         </div>
 
@@ -216,8 +216,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2025-08-09 13:55" pubdate>
-          2025年8月9日 下午
+        <time datetime="2025-09-21 22:41" pubdate>
+          2025年9月21日 晚上
         </time>
       </span>
     
@@ -228,7 +228,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1 字
+          153 字
         
       </span>
     
@@ -239,7 +239,7 @@
         
         
         
-          1 分钟
+          2 分钟
         
       </span>
     
@@ -285,13 +285,17 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">2025 北京 - 2.9 flow</h1>
+            <h1 id="seo-header">2025 北京 - 2.7 dp [欠模拟赛，题]</h1>
             
             
               <div class="markdown-body">
                 
                 <h2 id="Simulation">Simulation</h2>
+<p>🕊。</p>
 <h2 id="Problem-Set">Problem Set</h2>
+<h4 id="USACO24FEB-Minimum-Sum-of-Maximums-P">[USACO24FEB] Minimum Sum of Maximums P</h4>
+<p>如果一个序列固定了两端值为 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">ℓ</mi><mo separator="true">,</mo><mi>r</mi></mrow><annotation encoding="application/x-tex">\ell, r</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord">ℓ</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span></span></span></span>，且中间需要填入集合 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi></mrow><annotation encoding="application/x-tex">S</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span></span></span></span>，令 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">ℓ</mi><mo>≤</mo><mi>r</mi></mrow><annotation encoding="application/x-tex">\ell \le r</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8304em;vertical-align:-0.136em;"></span><span class="mord">ℓ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span></span></span></span>，手玩一下发现最小代价为 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">∣</mi><mi mathvariant="normal">ℓ</mi><mo>−</mo><mi>min</mi><mo>⁡</mo><mi>S</mi><mi mathvariant="normal">∣</mi><mo>+</mo><mi mathvariant="normal">∣</mi><mi>r</mi><mo>−</mo><mi>max</mi><mo>⁡</mo><mi>S</mi><mi mathvariant="normal">∣</mi><mo>+</mo><mi>max</mi><mo>⁡</mo><mi>S</mi><mo>−</mo><mi>min</mi><mo>⁡</mo><mi>S</mi></mrow><annotation encoding="application/x-tex">|\ell-\min S|+|r-\max S|+\max S-\min S</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">∣</span><span class="mord">ℓ</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mop">min</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mord">∣</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">∣</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mop">max</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mord">∣</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mop">max</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mop">min</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span></span></span></span>。于是可以按照值域从大到小填，但是固定数字之间填的个数是固定的，这很棘手。发现有一个性质：任意两段的 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false">[</mo><mi>min</mi><mo>⁡</mo><mi>S</mi><mo separator="true">,</mo><mi>max</mi><mo>⁡</mo><mi>S</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[\min S, \max S]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mop">min</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mop">max</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mclose">]</span></span></span></span> 要么包含要么相离，所以可以对值域做区间 dp，时间复杂度 <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">O</mi><mo stretchy="false">(</mo><msup><mi>n</mi><mn>2</mn></msup><msup><mn>3</mn><mi>k</mi></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\mathcal O(n^23^k)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0991em;vertical-align:-0.25em;"></span><span class="mord mathcal" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mord"><span class="mord">3</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8491em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.03148em;">k</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span>。</p>
+<h4 id="CF1007E-Mini-Metro">CF1007E Mini Metro</h4>
 
                 
               </div>
@@ -337,8 +341,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>2025 北京 - 2.9 flow</div>
-      <div>http://example.com/2025/08/09/trainset/BJ2025/02-09-flow/</div>
+      <div>2025 北京 - 2.7 dp [欠模拟赛，题]</div>
+      <div>http://example.com/2025/09/21/trainset/BJ2025/02-07-dp/</div>
     </div>
     <div class="license-meta">
       
@@ -350,7 +354,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2025年8月9日</div>
+          <div>2025年9月21日</div>
         </div>
       
       
@@ -377,29 +381,6 @@
 
 
 
-              
-                <div class="post-prevnext my-3">
-                  <article class="post-prev col-6">
-                    
-                    
-                      <a href="/2025/09/03/notes/other/Fractional-Cascading/" title="分散层叠">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">分散层叠</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
-                  </article>
-                  <article class="post-next col-6">
-                    
-                    
-                      <a href="/2025/07/29/trainset/MX2025/monisai/" title="2025 暑假 MX 模拟赛">
-                        <span class="hidden-mobile">2025 暑假 MX 模拟赛</span>
-                        <span class="visible-mobile">下一篇</span>
-                        <i class="iconfont icon-arrowright"></i>
-                      </a>
-                    
-                  </article>
-                </div>
               
             </div>
 
